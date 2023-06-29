@@ -23,4 +23,4 @@ solver = Solver.new
 puts solver.factorial(4)
 puts solver.reverse('world')
 puts solver.fizzbuzz(7)
-##featuree
+

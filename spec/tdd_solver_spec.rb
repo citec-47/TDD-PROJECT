@@ -37,10 +37,9 @@ describe Solver do
     it 'returns "fizzbuzz" when divisible by 3 and 5' do
       expect(@solver.fizzbuzz(15)).to eql 'fizzbuzz'
     end
+
+    it 'returns number when not divisible divisible by 3 and 5' do
+      expect(@solver.fizzbuzz(7)).to eql '7'
+    end
   end
 end
-
-# solver = Solver.new
-# puts solver.factorial(4)
-# puts solver.reverse('world')
-# puts solver.fizzbuzz(7)

@@ -1,6 +1,6 @@
 class Solver
   def factorial(value)
-    raise ArgumentError, 'N must be 0 or a positive integer.' if value.negative?
+    return 'Error! Please Enter value greater or equal to zero' if value.negative?
     return 1 if value.zero?
 
     (1..value).reduce(:*)

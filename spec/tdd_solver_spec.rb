@@ -10,6 +10,10 @@ describe Solver do
       expect(@solver.factorial(0)).to eql 1
     end
 
+    it 'returns error when given negative number' do
+      expect(@solver.factorial(-3)).to eql 'Error! Please Enter value greater or equal to zero'
+    end
+
     it 'returns 120 when given 5' do
       expect(@solver.factorial(5)).to eql 120
     end
@@ -36,7 +40,7 @@ describe Solver do
   end
 end
 
-solver = Solver.new
-puts solver.factorial(4)
-puts solver.reverse('world')
-puts solver.fizzbuzz(7)
+# solver = Solver.new
+# puts solver.factorial(4)
+# puts solver.reverse('world')
+# puts solver.fizzbuzz(7)
